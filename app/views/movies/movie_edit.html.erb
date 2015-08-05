@@ -1,0 +1,21 @@
+<form action="http://localhost:3000/update_movie/<%=@movie_id%>">
+  <div>
+    <label for="movie_name">Name:</label>
+    <input id="movie_name" type="string" name="the_name" value="<%=@movie_name%>">
+  </div>
+  <div>
+    <label for="movie_bio">Bio:</label>
+    <input id="movie_bio" type="text" name="the_bio" value="<%=@movie_bio%>">
+  </div>
+    <div>
+    <label for="movie_dob">Date of Birth:</label>
+    <input id="movie_dob" type="string" name="the_dob" value="<%=@movie_dob%>">
+  </div>
+    <div>
+    <label for="movie_image_url">Picture URL:</label>
+    <input id="movie_image_url" type="string" name="the_url" value="<%=@movie_image%>">
+  </div>
+  <div>
+    <button>Save Movie Changes</button>
+  </div>
+</form>

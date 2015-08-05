@@ -21,4 +21,12 @@ get("/create_director", { :controller => "movies", :action => "create_director" 
 get("/create_actor", { :controller => "movies", :action => "create_actor" })
 get("/create_movie", { :controller => "movies", :action => "create_movie" })
 
+get("/directors/:id/edit", { :controller => "movies", :action => "director_edit" })
+get("/actors/:id/edit", { :controller => "movies", :action => "actor_edit" })
+get("/movies/:id/edit", { :controller => "movies", :action => "movie_edit" })
+
+get("/update_director/:id/", { :controller => "movies", :action => "director_update" })
+get("/update_actor/:id/", { :controller => "movies", :action => "actor_update" })
+get("/update_movie/:id/", { :controller => "movies", :action => "movie_update" })
+
 end
